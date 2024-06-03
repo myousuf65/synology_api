@@ -7,7 +7,8 @@ import sys
 
 print(sys.argv[1])
 
-fl = filestation.FileStation('biomedhklab.synology.me', '6491', 'yousuf', 'Nokian876@biomed', secure=True, cert_verify=True, dsm_version=7, debug=False, otp_code=sys.argv[1])
+# domain: hklab one
+fl = filestation.FileStation('external_domain', '6491', 'username', 'password', secure=True, cert_verify=True, dsm_version=7, debug=False, otp_code=sys.argv[1])
 
 # print(fl.get_list_share())
 
